@@ -1,4 +1,7 @@
-//Pointers Arithmetic
+/*
+ * Description: Program to demonstrate Pointer Arithmetic
+ * Author: Muhammed Salman Shamsi
+ */
 #include<stdio.h>
 #include<stdlib.h>
 

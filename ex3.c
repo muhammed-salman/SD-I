@@ -1,8 +1,17 @@
+/*
+ * Description: Program to demonstrate relation between pointers and arrays;
+ * pointer and string; 
+ * swapping two numbers without using third variable;
+ * printing size of different data types
+ * Author: Muhammed Salman Shamsi
+ */
+
 #include<stdio.h>
 #include<stdlib.h>
 //swapping two numbers without using third variable
 
 void swap(int *a, int *b){
+	printf("\n\nSwapping num1 and num2 without using third variable");
 	*a=*a+*b; //a=a+b
 	*b=*a-*b; //b=(a+b)-b=a
 	*a=*a-*b; //a=(a+b)-a=b
@@ -24,9 +33,13 @@ void incrementChar(char *a)
 
 int main(){
 	int a[5]={1,2,3,4,5},i=5,*p;
+	int num1=8,num2=9;
 	char myString[15];
 	
-	printf("\nBefore Calling increment()");
+	printf("\nBefore Calling swap() num1=%d and num2=%d",num1,num2);
+	swap(&num1,&num2);
+	printf("\n\nAfter Calling swap() num1=%d and num2=%d",num1,num2);
+	printf("\n\nBefore Calling increment()");
 	for(i=0;i<5;i++)
 		printf("\n%d",a[i]);
 	increment(a);
